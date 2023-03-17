@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+/* more headers goes there */
+
 #include <time.h>
+/* betty style doc for function main goes there */
 /**
- * main - if else loop
+ * main - main function of the program
  * description - the starting point of the program
- * Return: (0) if sucess
  */
 
 int main(void)
