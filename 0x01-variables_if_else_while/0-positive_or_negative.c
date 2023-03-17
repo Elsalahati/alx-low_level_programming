@@ -7,6 +7,7 @@
 /**
  * main - main function of the program
  * description - the starting point of the program
+ * return: (0) success
  */
 
 int main(void)
