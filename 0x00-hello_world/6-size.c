@@ -12,6 +12,7 @@ int main(void)
 	long long o;
 	float f;
 
+	scanf("%c %d %li %lli %f", &c, &d, &li, &o, &f);
 	printf("Size of a char: %c bytes\n", &sizeof(char));
 	printf("Size of an int: %d bytes\n", &sizeof(int));
 	printf("Size of a long int: %li bytes\n", &sizeof(long int));
