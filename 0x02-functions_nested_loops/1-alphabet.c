@@ -1,13 +1,12 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - main function of the program
+ * print_alphabet - print the alphabet in lower case
  * description - the starting point of the program
  * Return: (0) success
  */
 
-void print_alphabet(void);
-int main(void)
+void print_alphabet(void)
 {
 	int p;
 
