@@ -3,7 +3,7 @@
 /**
  * _abs - gets the absolute value of a number
  * @n: negative number to get its absolute value
- * Return: Always 0 (sucess)
+ * Return: The absolute value of the number
  */
 
 int _abs(int n)
@@ -15,5 +15,5 @@ int _abs(int n)
 		absnumb = n * -1;
 		return (absnumb);
 	}
-	return (0);
+	return (n);
 }
