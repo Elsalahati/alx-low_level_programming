@@ -9,15 +9,5 @@
 
 int mul(int a, int b)
 {
-	int cross;
-
-	if (a <= 48 && a >= 57)
-	{
-		if (b <= 48 && b >= 57)
-		{
-			cross = a * b;
-			return (cross);
-		}
-	}
-	return (0);
+	return (a * b);
 }
