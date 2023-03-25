@@ -24,10 +24,10 @@ void print_triangle(int size)
 			{
 				_putchar(32);
 			}
-				for (sign = 0; sign <= rows ; sign++) 
-				{
-					_putchar('#');
-				}
+			for (sign = 0; sign <= rows; sign++)
+			{
+				_putchar('#');
+			}
 		_putchar('\n');
 		}
 	}
