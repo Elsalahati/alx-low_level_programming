@@ -1,28 +1,37 @@
 #include "main.h"
 
 /**
- * _pow_recursion - returns the result of number power another number
- * @x: a given number
- * @y: the power of the number
- * Return: the result of powered number, -1 if number is below zero
+ * is_prime_number - check if number is prime or not
+ * @n: a given number
+ * @h: divisor
+ * Return: 1 if number is prime, and 0 otherwise
  **/
 
-int _pow_recursion(int x, int y)
+int _prime(int n, int h);
+int is_prime_number(int n)
 {
-	if (y < 0)
-	{
-		return (-1);
-	}
-	else if (y == 0)
+	return (_prime(n, 2));
+}
+
+/**
+ * _prime - calculates and gets the natural square root of number
+ * @n: a given number
+ * @h: divisor
+ * Return: 1 if number is prime, and 0 otherwise
+ **/
+
+int _prime(int n, int h)
+{
+	if (h >= n && n >= 2)
 	{
 		return (1);
 	}
-	else if (y == 1)
+	else if (n % h == 0 || n < 2)
 	{
-		return (x);
+		return (0);
 	}
 	else
 	{
-		return (x * _pow_recursion(x, (y - 1)));
+		return (_prime(n, (h + 1)));
 	}
 }
