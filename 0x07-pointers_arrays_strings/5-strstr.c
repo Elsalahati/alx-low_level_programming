@@ -4,23 +4,25 @@
  * _strstr - find the first occurance
  * @haystack: string looking inside for a certain occurence
  * @needle: substring
- * Return: s (success) and NULL (otherwise)
+ * Return: haystack (success) and NULL (otherwise)
  **/
 
 char *_strstr(char *haystack, char *needle)
 {
-	int p;
-
-	while (*needle && *needle != '\0')
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (p = 0; haystack[p]; p++)
+		char *y = haystack;
+		char *z = needle;
+
+		while (*y == *z && *z != '\0')
 		{
-			if (*needle == haystack[p])
-			{
-				return (needle);
-			}
+			y++;
+			z++;
 		}
-		needle++;
+		if (*z == '\0')
+		{
+			return (haystack);
+		}
 	}
 	return ('\0');
 }
