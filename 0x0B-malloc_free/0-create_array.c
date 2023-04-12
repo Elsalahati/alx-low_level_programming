@@ -11,16 +11,15 @@
 
 char *create_array(unsigned int size, char c __attribute__((unused)))
 {
-	unsigned int s;
 	char *p = malloc(size);
 
 	if (size == '0' || p == 0)
 	{
 		return ('\0');
 	}
-	for (s = 0; s < size ; s++)
+	while (size--)
 	{
-		p[s] = c;
+		p[size] = c;
 	}
 	return (p);
 }
