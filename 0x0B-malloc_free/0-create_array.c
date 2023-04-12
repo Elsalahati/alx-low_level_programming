@@ -8,13 +8,13 @@
  * Return: pointer to the array & NULL otherwise
  **/
 
-char *create_array(unsigned int size, char c __attribute__((unused)))
+char *create_array(unsigned int size, char c)
 {
 	char *p = malloc(size);
 
 	if (size == '0' || p == 0)
 	{
-		return ('\0');
+		return (NULL);
 	}
 	while (size--)
 	{
