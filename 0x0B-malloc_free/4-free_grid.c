@@ -3,29 +3,19 @@
 #include "main.h"
 
 /**
- * free_grid - free memory of alloc_grid function
+ * free_grid - freeing 2D grid
  * @grid: two-dimensional array pointer
  * @height: string two
- * Return: pointer to the array of strings & NULL otherwise
+ * Return: no return
  **/
 
-int **alloc_grid(int width, int height)
+void free_grid(int **grid, int height)
 {
-	char arr[][];
-	int w, x, y, z;
-	int **arr;
+	int k;
 
-	if (width <= 0 || height <= 0)
+	for (k = 0; k < height; k++)
 	{
-		return ('\0');
+		free(grid[k]);
 	}
-	arr = malloc(sizeof(int*) * height);
-	if (arr == '\0')
-	{
-		free(arr);
-		return ('\0');
-	}
-	
-	p[w] = '\0';
-	return (p);
+	free(grid);
 }
