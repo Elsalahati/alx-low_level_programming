@@ -9,7 +9,6 @@
 
 size_t print_listint(const listint_t *h)
 {
-	/*listint_t *head_ptr = h; */
 	int nodecount = 0;
 
 	while (h != NULL)
